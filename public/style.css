@@ -34,14 +34,18 @@
   } */
   
   /* CSS Transition Example */
-  .transition-section {
-    transition: opacity 0.5s ease-in-out;
+.transition-section {
+    width: 100%;
     opacity: 0;
-  }
-  
-  .transition-section.active {
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform; /* Improve performance */
+}
+
+.transition-section.active {
     opacity: 1;
-  }
+    transform: translateY(0);
+}
 
 
 head, style{
@@ -89,6 +93,7 @@ body{
 }
 
 .home-text-white{
+    text-wrap: nowrap;
     margin-top: 30%;
     letter-spacing: 0.1rem;
 }
@@ -134,11 +139,12 @@ body{
 /* ---------------- ABOUT ME --------------- */
 #about-me{
     width: 100%;
+    margin-top: 5rem;
+    padding-top: 5rem;
 }
 
 .about-me-page{
     position: relative;
-    margin-top: 5rem;
     /* height: 80%; */
     /* height: 35rem; */
     width: 90%;
@@ -428,6 +434,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 
 .project-closed{
     background-color: black;
