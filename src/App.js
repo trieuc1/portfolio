@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
 
 function App() {
-    const [clipPath, setClipPath] = useState('polygon(7% 7%, 5% 5%, 100% 100%, 20% 100%)');
+    const [clipPath, setClipPath] = useState('polygon(6% 7%, 5% 6%, 100% 100%, 20% 100%)');
 
     useEffect(() => {
         const sections = document.querySelectorAll('.transition-section');
@@ -19,7 +19,7 @@ function App() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    console.log("hello");
+                    console.log(entry);
                     // Change clip-path based on the section being intersected
                     const newClipPath = generateClipPath(entry.target);
                     setClipPath(newClipPath);
@@ -42,14 +42,14 @@ function App() {
     // Function to generate a new clip-path based on the section
     const generateClipPath = (section) => {
         switch (section.id) {
-            case 'about-me':
-                return 'polygon(10% 10%, 5% 5%, 90% 100%, 25% 100%)';
-            case 'journey':
-                return 'polygon(15% 15%, 10% 10%, 85% 100%, 30% 100%)';
-            case 'portfolio':
-                return 'polygon(20% 20%, 15% 15%, 80% 100%, 35% 100%)';
+            case 'about-me-content':
+                return 'polygon(6% 7%, 10% 100%, 0% 100%, 90% 120%)';
+            case 'journey-content':
+                return 'polygon(6% 7%, 10% 130%, 0% 100%, 90% 160%)';
+            case 'portfolio-content':
+                return 'polygon(6% 7%, -30% 710%, 0% 100%, 60% 160%)';
             default:
-                return 'polygon(7% 7%, 5% 5%, 100% 100%, 20% 100%)';
+                return 'polygon(6% 7%, 5% 6%, 100% 100%, 20% 100%)';
         }
     };
     
@@ -58,16 +58,16 @@ function App() {
         <div className="App">
             <div className="spotlight-shape" style={{clipPath}}></div>
             <Navbar />
-            <div id="home" className="transition-section">
+            <div id="home-content" className="transition-section">
                 <Home />
             </div>
-            <div id="about-me" className="transition-section">
+            <div id="about-me-content" className="transition-section">
                 <AboutMe />
             </div>
-            <div id="journey" className="transition-section">
+            <div id="journey-content" className="transition-section">
                 <Journey />
             </div>
-            <div id="portfolio" className="transition-section">
+            <div id="portfolio-content" className="transition-section">
                 <Portfolio />
             </div>
             <Footer />
