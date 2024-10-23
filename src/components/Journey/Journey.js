@@ -22,15 +22,22 @@ const Journey = () => {
             title: "Pinterest",
             role: "Engage Scholar",
             date: "Aug 2023 - Present",
-            description: "The Engage program at Pinterest helped me prepare for internships and interviews. It also taught me how to leverage available resources effectively.",
+            description: "The Engage Program at Pinterest helped me feel prepared for internships and interviews by giving me the confidence and resources to practice. It also taught me how to leverage available resources effectively.",
             isLeftAligned: true
         },
         {
             title: "OOTify",
             role: "Development Co-Lead",
-            date: "Feb 2024 - Present",
-            description: "OOTify is a mental health startup. My internship there has taught me much of what I know as a developer and gave me invaluable experience leading a team.",
+            date: "Feb 2024 - ",
+            description: "OOTify is a mental health startup that hopes to provide accessible resources for those in need. My internship there has taught me much of what I know as a full-stack developer and gave me invaluable experience leading a team. During my time there, I used Django, MongoDB, HTML, CSS, JavaScript, and AWS to create a mental health web app.",
             isLeftAligned: false
+        },
+        {
+            title: "Silverado Engineering",
+            role: "Software Engineer Intern",
+            date: "July 2024 - ",
+            description: "Silverado Engineering is an energy power start up. Having not known much about the energy industry and anything about breakers or how feeders work, it is needless to say that I have learned a lot so far and hope to learn more.",
+            isLeftAligned: true
         }
     ];
 

@@ -18,6 +18,18 @@ const Extracurriculars = () => {
         {
             title: 'National Honors Society - Secretary',
             blurb: 'Maintained communication with faculty and documented meeting minutes for efficient club operations (2021-2022).'
+        },
+        {
+            title: 'Key Club - Secretary',
+            blurb: 'Served local community by organizing and participating in community events to give back; received Club of the Year for District 21'
+        },
+        {
+            title: 'Varsity Girls Lacrosse - Captain',
+            blurb: 'Achieved recognition as one of the top scorers in the city league, excelling in both the attack and midfield positions; led team to CIF San Diego Section playoffs in 2019, 2021, 2022; 2x First Team All League'
+        },
+        {
+            title: 'Varsity Girls Field Hockey - Captain',
+            blurb: 'Led team to CIF San Diego Section playoffs in 2018, 2019, and 2021 by utilizing effective communication between coach and teammates; selected as First Team All League'
         }
     ];
 

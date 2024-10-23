@@ -367,10 +367,11 @@ body{
     position: absolute;
     background-color: rgba(115, 115, 115, 0.94);
     width: 20%;
+    min-height: 10%;
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .journey-hover-text{

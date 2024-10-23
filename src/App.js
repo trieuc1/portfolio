@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Journey from './components/Journey/Journey';
 import Portfolio from './components/Portfolio/Portfolio';
 import Footer from './components/Footer/Footer';
+import OOTifyGif from './assets/reportspage.gif';
 
 function App() {
     const [clipPath, setClipPath] = useState('polygon(6% 7%, 5% 6%, 100% 100%, 20% 100%)');
@@ -67,6 +68,8 @@ function App() {
             <div id="journey-content" className="transition-section">
                 <Journey />
             </div>
+            <img src={OOTifyGif} style={{ width: "80%", marginTop: "20rem" }} alt="OOTify Admin Reports Page" />
+            <p style={{marginBottom: "5rem", marginTop: "2rem", fontSize:"calc(0.6rem + 0.7vh)", fontFamily: "Inter", letterSpacing: "0.1rem"}}>OOTify Admin Reports Page</p>
             <div id="portfolio-content" className="transition-section">
                 <Portfolio />
             </div>

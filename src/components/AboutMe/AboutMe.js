@@ -19,7 +19,7 @@ const AboutMe = () => {
     const descriptionText = `
         is currently a computer science student at UCI.
         She is originally from San Diego, CA, and has been there most of her life. 
-        She comes from a big Viet-Chinese family and has three other siblings with whom she is very close.
+        She comes from a big Viet-Chinese family and has three other siblings with whom she is very close to.
         She loves watching crime and drama TV shows and enjoys playing lacrosse, thrifting clothes, and reading.
     `;
     const sectionTitles = {
@@ -36,6 +36,9 @@ const AboutMe = () => {
                     <div className="user-image">
                         <img src={about_image} alt="user" className="about-image" />
                     </div>
+                    <div className="user-socials" id="laptop-social">
+					    <iframe title="Spotify Playlist" style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/playlist/0wwq6fvlucZxNt1J0VNOUC?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+				    </div>
                 </div>
                 <div className="user-content">
                     <p id="user-header" className="user-header">{headerText}</p>

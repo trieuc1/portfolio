@@ -5,7 +5,10 @@ import movie_icon from '../../assets/movie_icon.png';
 import search_icon from '../../assets/search_icon.png';
 import music_icon from '../../assets/music_icon.png';
 import travel_icon from '../../assets/travel_icon.png';
+import portfolio_icon from '../../assets/portfolio_icon.png';
 import outfit_icon from '../../assets/outfit_icon.png';
+import black_github from '../../assets/black_github.png';
+import black_figma from '../../assets/black_figma.png';
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([false, false, false, false, false, false]);
@@ -28,43 +31,57 @@ const Portfolio = () => {
       frameworks: 'Python',
       description: `I engineered an AI-powered Minesweeper solver that achieved an overall solvability rate of 70%. This solver harnessed techniques such as backtracking algorithms, probability analysis, and constraint satisfaction.`,
       icon: game_icon,
-      githubLink: 'https://github.com/your-ai-minesweeper-repo',
+      link: 'https://github.com/trieuc1/CS171_Minesweeper',
+      linkIcon: black_github
     },
     {
       name: 'FILM INSIGHTS',
       frameworks: 'HTML, CSS, JS, Python (scikit-learn)',
       description: `Explored text classification using the IMDb dataset, focusing on sentiment analysis of movie reviews. Neural networks achieved an overall accuracy of 84%.`,
       icon: movie_icon,
-      githubLink: 'https://github.com/your-film-insights-repo',
+      link: 'https://github.com/deano4/cs178_final',
+      linkIcon: black_github
     },
     {
       name: 'SEARCH ENGINE',
       frameworks: 'HTML, CSS, JS, Python (bs4, lxml, nltk)',
       description: `Developed a search engine using web scraping and advanced ranking techniques to deliver highly relevant search results in under 0.5 seconds.`,
       icon: search_icon,
-      githubLink: 'https://github.com/your-search-engine-repo',
+      link: 'https://github.com/trieuc1/CS121_Project3',
+      linkIcon: black_github
     },
     {
-      name: 'GAME PROJECT',
-      frameworks: 'HTML, CSS, JS',
-      description: `A dynamic game created with HTML, CSS, and JS. Leveraged front-end technologies to deliver a seamless gaming experience.`,
-      icon: music_icon,
-      githubLink: 'https://github.com/your-game-project-repo',
+      name: 'PORTFOLIO WEBSITE',
+      frameworks: 'HTML, CSS, React, JSX',
+      description: `Created a portfolio website`,
+      icon: portfolio_icon,
+      link: 'https://github.com/trieuc1/celine-portfolio',
+      linkIcon: black_github
     },
+    {
+      name: 'LOOK',
+      frameworks: 'HTML, CSS, JS',
+      description: `Created a fashion-oriented web platform with interactive content for users that are interested in finding new ways to express themselves through style. Coming soon.`,
+      icon: outfit_icon,
+      link: 'https://www.figma.com/design/qveBSRADtEkraEzTTma292/portfolio-website?node-id=19-244&t=bkyLgCO9AaQanZkb-1',
+      linkIcon: black_figma
+    },
+    // {
+    //   name: 'GAME PROJECT',
+    //   frameworks: 'HTML, CSS, JS',
+    //   description: `A dynamic game created with HTML, CSS, and JS. Leveraged front-end technologies to deliver a seamless gaming experience. Coming Soon.`,
+    //   icon: music_icon,
+    //   link: '',
+    //   linkIcon: black_github
+    // },
     {
       name: 'TRAVEL PROJECT',
       frameworks: 'HTML, CSS, JS',
-      description: `Developed a travel blog showcasing different destinations using modern web development practices.`,
+      description: `Developed a AI travel planner. Coming Soon.`,
       icon: travel_icon,
-      githubLink: 'https://github.com/your-travel-project-repo',
-    },
-    {
-      name: 'FASHION PROJECT',
-      frameworks: 'HTML, CSS, JS',
-      description: `Created a fashion-oriented web platform with interactive content for users.`,
-      icon: outfit_icon,
-      githubLink: 'https://github.com/your-fashion-project-repo',
-    },
+      link: '',
+      linkIcon: black_github
+    }
   ];
 
   return (
@@ -76,7 +93,8 @@ const Portfolio = () => {
           frameworks={project.frameworks}
           description={project.description}
           projectIcon={project.icon}
-          githubLink={project.githubLink}
+          link={project.link}
+          linkIcon={project.linkIcon}
           isOpen={projects[index]}
           onMouseEnter={handleMouseEnterProject(index)}
           onMouseLeave={handleMouseLeaveProject(index)}

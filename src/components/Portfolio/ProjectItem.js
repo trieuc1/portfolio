@@ -1,5 +1,4 @@
 import React from 'react';
-import black_github from '../../assets/black_github.png'; // Assuming all projects use the same GitHub icon
 import portfolio_star from '../../assets/portfolio_star.png';
 
 const ProjectItem = ({
@@ -7,7 +6,8 @@ const ProjectItem = ({
   frameworks,
   description,
   projectIcon,
-  githubLink,
+  link,
+  linkIcon,
   isOpen,
   onMouseEnter,
   onMouseLeave
@@ -23,8 +23,8 @@ const ProjectItem = ({
           <p className="project-name">{projectName}</p>
           <p className="project-frameworks">{frameworks}</p>
           <p className="project-description">{description}</p>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <img src={black_github} alt="GitHub icon" className="github-icon" />
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img src={linkIcon} alt="GitHub icon" className="github-icon" />
           </a>
         </div>
       </div>
