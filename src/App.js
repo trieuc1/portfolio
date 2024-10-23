@@ -74,6 +74,11 @@ function App() {
                 <Portfolio />
             </div>
             <Footer />
+            <p>
+                <a href="http://validator.w3.org/check?uri=referer">
+                W3C validator
+                </a>
+            </p>
         </div>
     );
 }

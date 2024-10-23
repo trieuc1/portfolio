@@ -24,7 +24,7 @@ const Portfolio = () => {
     newProjects[index] = false;
     setProjects(newProjects);
   };
-
+  
   const projectData = [
     {
       name: 'AI MINESWEEPER',

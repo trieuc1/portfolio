@@ -14,7 +14,7 @@ const ProjectItem = ({
 }) => {
   return (
     <div className="project">
-      <img src={portfolio_star} alt="project icon" className="project-star" />
+      <img src={portfolio_star} alt="star icon" className="project-star" />
       <div className="project-content" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <div className="project-closed" style={{ display: isOpen ? 'none' : 'flex' }}>
           <img src={projectIcon} alt="project icon" className="project-icon" style={{ display: isOpen ? 'none' : 'flex' }} />
