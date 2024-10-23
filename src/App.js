@@ -68,8 +68,8 @@ function App() {
             <div id="journey-content" className="transition-section">
                 <Journey />
             </div>
-            <img src={OOTifyGif} style={{ width: "80%", marginTop: "20rem" }} alt="OOTify Admin Reports Page" />
-            <p style={{marginBottom: "5rem", marginTop: "2rem", fontSize:"calc(0.6rem + 0.7vh)", fontFamily: "Inter", letterSpacing: "0.1rem"}}>OOTify Admin Reports Page</p>
+            <img src={OOTifyGif} style={{ width: "80%", marginTop: "20rem" }} alt="OOTify Admin Page" />
+            <p style={{marginBottom: "5rem", marginTop: "2rem", fontSize:"calc(0.6rem + 0.7vh)", fontFamily: "Inter", letterSpacing: "0.1rem", fontWeight: "600"}}>OOTify Admin Page</p>
             <div id="portfolio-content" className="transition-section">
                 <Portfolio />
             </div>
