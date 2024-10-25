@@ -4,14 +4,17 @@ import game_icon from '../../assets/game_icon.png';
 import movie_icon from '../../assets/movie_icon.png';
 import search_icon from '../../assets/search_icon.png';
 import music_icon from '../../assets/music_icon.png';
+import brain_icon from '../../assets/brain_icon.png';
 import travel_icon from '../../assets/travel_icon.png';
 import portfolio_icon from '../../assets/portfolio_icon.png';
 import outfit_icon from '../../assets/outfit_icon.png';
 import black_github from '../../assets/black_github.png';
 import black_figma from '../../assets/black_figma.png';
+import portfolio_star from '../../assets/portfolio_star.png';
+import OOTifyGif from '../../assets/ootify_gif.gif';
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([false, false, false, false, false, false]);
+  const [projects, setProjects] = useState([false, false, false, false, false, false, false]);
 
   const handleMouseEnterProject = (index) => () => {
     const newProjects = [...projects];
@@ -86,6 +89,21 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio" className="portfolio-page">
+      <div className="project">
+        <img src={portfolio_star} alt="star icon" className="project-star" />
+        <div className="project-content" onMouseEnter={handleMouseEnterProject(6)} onMouseLeave={handleMouseLeaveProject(6)}>
+          <div className="project-closed" style={{ display: projects[6] ? 'none' : 'flex' }}>
+            <img src={brain_icon} alt="project icon" className="project-icon" style={{ display: projects[6] ? 'none' : 'flex' }} />
+          </div>
+          <div className="project-text" style={{ display: projects[6] ? 'flex' : 'none' }}>
+            <p className="project-name">OOTIFY</p>
+            <p className="project-frameworks">Django, HTML/CSS, MongoDB, AWS, JS</p>
+            <p className="project-description">Implemented and integrated major features, including mood tracking, resource feedback logging, an admin and analytics dashboard powered by ChartJS, and a resource creation library with dynamic code and responsive pages</p>
+            <img src={OOTifyGif} style={{ width: "100%", marginTop: "1rem"}} alt="OOTify Admin Page" />
+            <p className="project-description" style={{fontSize:"calc(0.3rem + 0.7vh)", fontWeight:"400", marginTop:"0.3rem", marginBottom:"1rem", letterSpacing:"0.01rem"}}>OOTify Admin Page</p>
+          </div>
+        </div>
+      </div>
       {projectData.map((project, index) => (
         <ProjectItem
           key={index}
