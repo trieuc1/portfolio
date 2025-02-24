@@ -621,6 +621,7 @@ body{
     align-items: center;
     width: 40%;
     font-size: calc(0.3rem + 0.7vh);
+    cursor: pointer;
 }
 
 .social{

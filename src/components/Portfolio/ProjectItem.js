@@ -23,9 +23,9 @@ const ProjectItem = ({
           <p className="project-name">{projectName}</p>
           <p className="project-frameworks">{frameworks}</p>
           <p className="project-description">{description}</p>
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          {/* <a href={link} target="_blank" rel="noopener noreferrer">
             <img src={linkIcon} alt="GitHub icon" className="github-icon" />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

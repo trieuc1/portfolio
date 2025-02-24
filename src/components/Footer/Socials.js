@@ -32,12 +32,11 @@ const Socials = () => {
     return (
         <div className="socials">
             {socialLinks.map((social, index) => (
-                <div key={index} className="social">
+                <div key={index} className="social" onClick={() => window.open(social.url)}>
                     <img
                         className="social-icon"
                         alt={social.label.toLowerCase()}
                         src={social.icon}
-                        onClick={() => window.open(social.url)}
                     />
                     <p className="social-text">{social.label}</p>
                 </div>
